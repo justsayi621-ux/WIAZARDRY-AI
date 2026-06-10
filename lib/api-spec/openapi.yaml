@@ -1,0 +1,1026 @@
+openapi: 3.1.0
+info:
+  title: Api
+  version: 0.1.0
+  description: Wizardry AI - Enterprise Deepfake Detection Platform API
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: users
+    description: User profile and account management
+  - name: scans
+    description: Deepfake scan operations
+  - name: subscriptions
+    description: Subscription and billing management
+  - name: settings
+    description: User settings and preferences
+  - name: notifications
+    description: Notification management
+  - name: api-keys
+    description: API key management for Enterprise tier
+  - name: stats
+    description: Analytics and statistics
+
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+
+  # ─── Users ───────────────────────────────────────────────────────────────────
+  /users/me:
+    get:
+      operationId: getMe
+      tags: [users]
+      summary: Get current user profile
+      responses:
+        "200":
+          description: User profile
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
+    patch:
+      operationId: updateMe
+      tags: [users]
+      summary: Update current user profile
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UserUpdate"
+      responses:
+        "200":
+          description: Updated user
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
+
+  /users/register:
+    post:
+      operationId: registerUser
+      tags: [users]
+      summary: Register a new user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UserRegister"
+      responses:
+        "201":
+          description: Created user
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
+
+  /users/login:
+    post:
+      operationId: loginUser
+      tags: [users]
+      summary: Login user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UserLogin"
+      responses:
+        "200":
+          description: Authenticated user
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AuthResponse"
+
+  # ─── Scans ───────────────────────────────────────────────────────────────────
+  /scans:
+    get:
+      operationId: listScans
+      tags: [scans]
+      summary: List scans for current user
+      parameters:
+        - name: filter
+          in: query
+          schema:
+            type: string
+            enum: [all, ai, real, mixed]
+        - name: search
+          in: query
+          schema:
+            type: string
+        - name: limit
+          in: query
+          schema:
+            type: integer
+        - name: offset
+          in: query
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: List of scans
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Scan"
+    post:
+      operationId: createScan
+      tags: [scans]
+      summary: Submit a new scan
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ScanInput"
+      responses:
+        "201":
+          description: Created scan
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Scan"
+
+  /scans/{id}:
+    get:
+      operationId: getScan
+      tags: [scans]
+      summary: Get a specific scan
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Scan details
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Scan"
+        "404":
+          description: Not found
+    delete:
+      operationId: deleteScan
+      tags: [scans]
+      summary: Delete a scan
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "204":
+          description: Deleted
+
+  /scans/analyze:
+    post:
+      operationId: analyzeScan
+      tags: [scans]
+      summary: Run AI analysis on uploaded media
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/AnalyzeInput"
+      responses:
+        "200":
+          description: Analysis result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AnalysisResult"
+
+  /scans/stats:
+    get:
+      operationId: getScanStats
+      tags: [scans]
+      summary: Get scan statistics for current user
+      responses:
+        "200":
+          description: Scan statistics
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ScanStats"
+
+  /scans/recent:
+    get:
+      operationId: getRecentScans
+      tags: [scans]
+      summary: Get 5 most recent scans
+      responses:
+        "200":
+          description: Recent scans
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Scan"
+
+  # ─── Subscriptions ───────────────────────────────────────────────────────────
+  /subscriptions/plans:
+    get:
+      operationId: getPlans
+      tags: [subscriptions]
+      summary: List all subscription plans
+      responses:
+        "200":
+          description: Available plans
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Plan"
+
+  /subscriptions/current:
+    get:
+      operationId: getCurrentSubscription
+      tags: [subscriptions]
+      summary: Get current user subscription
+      responses:
+        "200":
+          description: Current subscription
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Subscription"
+
+  /subscriptions/upgrade:
+    post:
+      operationId: upgradeSubscription
+      tags: [subscriptions]
+      summary: Upgrade subscription plan
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UpgradeInput"
+      responses:
+        "200":
+          description: Updated subscription
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Subscription"
+
+  /subscriptions/tokens:
+    get:
+      operationId: getTokenBalance
+      tags: [subscriptions]
+      summary: Get current token balance and usage
+      responses:
+        "200":
+          description: Token balance
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TokenBalance"
+
+  /subscriptions/tokens/consume:
+    post:
+      operationId: consumeTokens
+      tags: [subscriptions]
+      summary: Consume tokens for a scan operation
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TokenConsumeInput"
+      responses:
+        "200":
+          description: Updated token balance
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TokenBalance"
+
+  # ─── Settings ────────────────────────────────────────────────────────────────
+  /settings:
+    get:
+      operationId: getSettings
+      tags: [settings]
+      summary: Get user settings
+      responses:
+        "200":
+          description: User settings
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Settings"
+    patch:
+      operationId: updateSettings
+      tags: [settings]
+      summary: Update user settings
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SettingsUpdate"
+      responses:
+        "200":
+          description: Updated settings
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Settings"
+
+  # ─── Notifications ────────────────────────────────────────────────────────────
+  /notifications:
+    get:
+      operationId: listNotifications
+      tags: [notifications]
+      summary: List notifications for current user
+      responses:
+        "200":
+          description: Notifications
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Notification"
+
+  /notifications/{id}/read:
+    patch:
+      operationId: markNotificationRead
+      tags: [notifications]
+      summary: Mark a notification as read
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Updated notification
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Notification"
+
+  /notifications/read-all:
+    patch:
+      operationId: markAllNotificationsRead
+      tags: [notifications]
+      summary: Mark all notifications as read
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SuccessResponse"
+
+  # ─── API Keys (Enterprise) ───────────────────────────────────────────────────
+  /api-keys:
+    get:
+      operationId: listApiKeys
+      tags: [api-keys]
+      summary: List API keys (Enterprise only)
+      responses:
+        "200":
+          description: API keys
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/ApiKey"
+    post:
+      operationId: createApiKey
+      tags: [api-keys]
+      summary: Generate a new API key (Enterprise only)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ApiKeyInput"
+      responses:
+        "201":
+          description: Created API key
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiKey"
+
+  /api-keys/{id}:
+    delete:
+      operationId: deleteApiKey
+      tags: [api-keys]
+      summary: Revoke an API key
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "204":
+          description: Revoked
+
+  /webhooks:
+    get:
+      operationId: listWebhooks
+      tags: [api-keys]
+      summary: List webhooks (Enterprise only)
+      responses:
+        "200":
+          description: Webhooks
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Webhook"
+    post:
+      operationId: createWebhook
+      tags: [api-keys]
+      summary: Create a webhook endpoint
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WebhookInput"
+      responses:
+        "201":
+          description: Created webhook
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Webhook"
+
+  /webhooks/{id}:
+    delete:
+      operationId: deleteWebhook
+      tags: [api-keys]
+      summary: Delete a webhook
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "204":
+          description: Deleted
+
+  # ─── Dashboard Stats ─────────────────────────────────────────────────────────
+  /stats/dashboard:
+    get:
+      operationId: getDashboardStats
+      tags: [stats]
+      summary: Get dashboard-level statistics
+      responses:
+        "200":
+          description: Dashboard stats
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DashboardStats"
+
+  /stats/scorecard:
+    get:
+      operationId: getScorecard
+      tags: [stats]
+      summary: Get intelligent scorecard for user
+      responses:
+        "200":
+          description: Scorecard
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Scorecard"
+
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      required: [status]
+      properties:
+        status:
+          type: string
+
+    SuccessResponse:
+      type: object
+      required: [success]
+      properties:
+        success:
+          type: boolean
+        message:
+          type: ["string", "null"]
+
+    # ─── User ───────────────────────────────────────────────────────────────────
+    User:
+      type: object
+      required: [id, email, username, tier, createdAt]
+      properties:
+        id:
+          type: integer
+        email:
+          type: string
+        username:
+          type: string
+        displayName:
+          type: ["string", "null"]
+        avatarUrl:
+          type: ["string", "null"]
+        tier:
+          type: string
+          enum: [free, basic, pro, advanced, enterprise]
+        totalScans:
+          type: integer
+        aiDetected:
+          type: integer
+        authentic:
+          type: integer
+        uncertain:
+          type: integer
+        createdAt:
+          type: string
+
+    UserRegister:
+      type: object
+      required: [email, username, password]
+      properties:
+        email:
+          type: string
+        username:
+          type: string
+        password:
+          type: string
+        displayName:
+          type: string
+
+    UserLogin:
+      type: object
+      required: [email, password]
+      properties:
+        email:
+          type: string
+        password:
+          type: string
+
+    UserUpdate:
+      type: object
+      properties:
+        displayName:
+          type: string
+        avatarUrl:
+          type: string
+
+    AuthResponse:
+      type: object
+      required: [user, token]
+      properties:
+        user:
+          $ref: "#/components/schemas/User"
+        token:
+          type: string
+
+    # ─── Scan ───────────────────────────────────────────────────────────────────
+    Scan:
+      type: object
+      required: [id, userId, status, verdict, createdAt]
+      properties:
+        id:
+          type: integer
+        userId:
+          type: integer
+        filename:
+          type: ["string", "null"]
+        mediaUrl:
+          type: ["string", "null"]
+        mediaType:
+          type: ["string", "null"]
+        contextNote:
+          type: ["string", "null"]
+        engineModel:
+          type: string
+        status:
+          type: string
+          enum: [pending, processing, complete, failed]
+        verdict:
+          type: string
+          enum: [ai, real, mixed, unknown]
+        confidenceScore:
+          type: ["number", "null"]
+        sensitivityLevel:
+          type: string
+          enum: [low, medium, high]
+        anomalies:
+          type: ["string", "null"]
+        categories:
+          type: ["string", "null"]
+        tokensUsed:
+          type: integer
+        processingMs:
+          type: ["integer", "null"]
+        createdAt:
+          type: string
+        completedAt:
+          type: ["string", "null"]
+
+    ScanInput:
+      type: object
+      required: [engineModel]
+      properties:
+        filename:
+          type: string
+        mediaUrl:
+          type: string
+        mediaType:
+          type: string
+        contextNote:
+          type: string
+        engineModel:
+          type: string
+        sensitivityLevel:
+          type: string
+          enum: [low, medium, high]
+
+    AnalyzeInput:
+      type: object
+      required: [scanId, engineModel]
+      properties:
+        scanId:
+          type: integer
+        engineModel:
+          type: string
+        mediaBase64:
+          type: string
+        contextNote:
+          type: string
+        sensitivityLevel:
+          type: string
+          enum: [low, medium, high]
+
+    AnalysisResult:
+      type: object
+      required: [verdict, confidenceScore]
+      properties:
+        verdict:
+          type: string
+          enum: [ai, real, mixed, unknown]
+        confidenceScore:
+          type: number
+        anomalies:
+          type: array
+          items:
+            type: string
+        categories:
+          type: array
+          items:
+            type: string
+        summary:
+          type: string
+        tokensUsed:
+          type: integer
+        processingMs:
+          type: integer
+        modelUsed:
+          type: string
+
+    ScanStats:
+      type: object
+      required: [total, aiDetected, authentic, uncertain, mixed]
+      properties:
+        total:
+          type: integer
+        aiDetected:
+          type: integer
+        authentic:
+          type: integer
+        uncertain:
+          type: integer
+        mixed:
+          type: integer
+        avgConfidence:
+          type: ["number", "null"]
+
+    # ─── Subscription / Tokens ──────────────────────────────────────────────────
+    Plan:
+      type: object
+      required: [id, name, price, tokenLimit, features]
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        price:
+          type: number
+        tokenLimit:
+          type: ["integer", "null"]
+        tokensPerRound:
+          type: integer
+        features:
+          type: array
+          items:
+            type: string
+        recommended:
+          type: boolean
+
+    Subscription:
+      type: object
+      required: [id, userId, planId, status, currentPeriodEnd]
+      properties:
+        id:
+          type: integer
+        userId:
+          type: integer
+        planId:
+          type: string
+        status:
+          type: string
+          enum: [active, cancelled, past_due, trialing]
+        currentPeriodEnd:
+          type: string
+        cancelAtPeriodEnd:
+          type: boolean
+
+    UpgradeInput:
+      type: object
+      required: [planId]
+      properties:
+        planId:
+          type: string
+        paymentMethod:
+          type: string
+
+    TokenBalance:
+      type: object
+      required: [userId, planId, tokenLimit, tokensUsed, tokensRemaining]
+      properties:
+        userId:
+          type: integer
+        planId:
+          type: string
+        tokenLimit:
+          type: ["integer", "null"]
+        tokensUsed:
+          type: integer
+        tokensRemaining:
+          type: ["integer", "null"]
+        resetAt:
+          type: ["string", "null"]
+        warningThreshold:
+          type: integer
+        isExhausted:
+          type: boolean
+        isNearLimit:
+          type: boolean
+
+    TokenConsumeInput:
+      type: object
+      required: [scanId, amount]
+      properties:
+        scanId:
+          type: integer
+        amount:
+          type: integer
+
+    # ─── Settings ───────────────────────────────────────────────────────────────
+    Settings:
+      type: object
+      required: [userId]
+      properties:
+        userId:
+          type: integer
+        inferenceMode:
+          type: string
+          enum: [hybrid, on_device, cloud]
+        scanSensitivity:
+          type: string
+          enum: [low, medium, high]
+        dataUsageMode:
+          type: string
+          enum: [wifi_only, low_data, normal]
+        autoDeleteDays:
+          type: ["integer", "null"]
+        localOnlyMode:
+          type: boolean
+        pushNotifications:
+          type: boolean
+        notificationBarResults:
+          type: boolean
+        silentMode:
+          type: boolean
+        priorityAlert:
+          type: boolean
+        darkMode:
+          type: boolean
+        language:
+          type: string
+        timezone:
+          type: string
+        twoFactorEnabled:
+          type: boolean
+        sessionTimeout:
+          type: integer
+
+    SettingsUpdate:
+      type: object
+      properties:
+        inferenceMode:
+          type: string
+          enum: [hybrid, on_device, cloud]
+        scanSensitivity:
+          type: string
+          enum: [low, medium, high]
+        dataUsageMode:
+          type: string
+          enum: [wifi_only, low_data, normal]
+        autoDeleteDays:
+          type: ["integer", "null"]
+        localOnlyMode:
+          type: boolean
+        pushNotifications:
+          type: boolean
+        notificationBarResults:
+          type: boolean
+        silentMode:
+          type: boolean
+        priorityAlert:
+          type: boolean
+        darkMode:
+          type: boolean
+        language:
+          type: string
+        timezone:
+          type: string
+        twoFactorEnabled:
+          type: boolean
+        sessionTimeout:
+          type: integer
+
+    # ─── Notifications ───────────────────────────────────────────────────────────
+    Notification:
+      type: object
+      required: [id, userId, type, title, message, read, createdAt]
+      properties:
+        id:
+          type: integer
+        userId:
+          type: integer
+        type:
+          type: string
+          enum: [scan_complete, token_warning, token_exhausted, upgrade_prompt, security_alert, greeting, reminder, suggestion, system]
+        title:
+          type: string
+        message:
+          type: string
+        read:
+          type: boolean
+        priority:
+          type: string
+          enum: [low, medium, high, critical]
+        actionUrl:
+          type: ["string", "null"]
+        createdAt:
+          type: string
+
+    # ─── API Keys ────────────────────────────────────────────────────────────────
+    ApiKey:
+      type: object
+      required: [id, userId, name, keyPreview, createdAt]
+      properties:
+        id:
+          type: integer
+        userId:
+          type: integer
+        name:
+          type: string
+        keyPreview:
+          type: string
+        fullKey:
+          type: ["string", "null"]
+        active:
+          type: boolean
+        lastUsedAt:
+          type: ["string", "null"]
+        createdAt:
+          type: string
+
+    ApiKeyInput:
+      type: object
+      required: [name]
+      properties:
+        name:
+          type: string
+
+    Webhook:
+      type: object
+      required: [id, userId, url, events, active, createdAt]
+      properties:
+        id:
+          type: integer
+        userId:
+          type: integer
+        url:
+          type: string
+        events:
+          type: array
+          items:
+            type: string
+        active:
+          type: boolean
+        secret:
+          type: ["string", "null"]
+        createdAt:
+          type: string
+
+    WebhookInput:
+      type: object
+      required: [url, events]
+      properties:
+        url:
+          type: string
+        events:
+          type: array
+          items:
+            type: string
+
+    # ─── Stats ───────────────────────────────────────────────────────────────────
+    DashboardStats:
+      type: object
+      required: [totalScans, aiDetected, authentic, uncertain, tokensUsed, tokensRemaining]
+      properties:
+        totalScans:
+          type: integer
+        aiDetected:
+          type: integer
+        authentic:
+          type: integer
+        uncertain:
+          type: integer
+        mixed:
+          type: integer
+        tokensUsed:
+          type: integer
+        tokensRemaining:
+          type: ["integer", "null"]
+        scansToday:
+          type: integer
+        avgConfidenceScore:
+          type: ["number", "null"]
+        topEngine:
+          type: ["string", "null"]
+        detectionRate:
+          type: ["number", "null"]
+
+    Scorecard:
+      type: object
+      required: [userId, overallScore, trustScore, accuracyScore, activityScore]
+      properties:
+        userId:
+          type: integer
+        overallScore:
+          type: number
+        trustScore:
+          type: number
+        accuracyScore:
+          type: number
+        activityScore:
+          type: number
+        grade:
+          type: string
+        insights:
+          type: array
+          items:
+            type: string
+        suggestions:
+          type: array
+          items:
+            type: string
+        streak:
+          type: integer
+        lastActive:
+          type: ["string", "null"]

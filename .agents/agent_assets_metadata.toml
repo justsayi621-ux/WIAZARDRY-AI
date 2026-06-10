@@ -1,0 +1,14 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "Sg8tK4XbBgw_CXe8Ftyy_"
+uri = "file://wizardry-ai.tar.gz"
+type = "unspecified"
+title = "Wizardry AI — Full Project Archive"
+
+[[outputs]]
+id = "QeZnz6PtNcY85a64PxfkI"
+uri = "file://wizardry-ai-project.tar.gz"
+type = "unspecified"
+title = "Wizardry AI — Full Source Code (.tar.gz)"

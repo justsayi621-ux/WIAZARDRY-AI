@@ -1,0 +1,38 @@
+Build a highly scalable, enterprise-grade deepfake detection and media forensics application named "Wizardry AI". The system architecture consists of a five-tab Expo (React Native Web) frontend client application paired with a high-performance Express-TypeScript API backend server using Drizzle ORM and a Supabase PostgreSQL instance.
+
+CRITICAL IMPLEMENTATION COMPLIANCE RULES:
+- Output every file fully from top imports to bottom exports. Do not shorten files using placeholders, ellipsis (...), or descriptive text descriptions.
+- All frontend functional react states (useCallback, useEffect) must include explicit structural dependency mapping blocks and completely balanced brackets to prevent Babel compilation faults or blank white screen crashes.
+- Do not transmit raw JavaScript objects directly into database slots mapping string structures. Use structured, native Drizzle-SQL casting expressions to synchronize data frameworks cleanly.
+
+1. FRONTEND APP NAVIGATION ARCHITECTURE (artifacts/wizardry-mobile)
+Implement five distinct navigation tab screen scripts inside 'app/(tabs)/':
+- index.tsx (Forensic Scanner Workspace):
+  * Features a "Media Picker Upload Row Button" that triggers a native HTML5 input file dialogue when running on web. 
+  * Selecting a file captures a raw File block and generates a temporary blob local URI to instantly show a "Live Video Preview Window" player panel on the interface. Includes a 'Remove File' action button.
+  * Incorporates a text multi-line container labeled "Video Context / Description" where users type context notes to guide the analysis.
+  * A standard drop-down HTML select menu labeled "Select AI Engine Layer" containing choices for: 'Gemini 2.5 Flash (Ultra Fast)', 'Gemini 2.5 Pro (Deep Deepfake Analysis)', and '🌐 ZAK Global Search Model (Surface + Deep Web Audit)'.
+  * A large "SCAN NOW" central action circle button equipped with an interactive RadarPulse scanning animation overlay. The scan button and URL text link submissions must be bounded by a "Safety Action Gate" that remains completely grayed out, disabled, and unclickable until a legitimate video file has been chosen or a properly formatted video URL link has been input.
+- history.tsx (Forensic Ledger Screen):
+  * Renders a custom data array ledger grid with a segmented tab manager mapping array filters across 'All', 'AI', 'Real', and 'Mixed' parameters. Includes a top text search query string bar and custom rows deletion action triggers to wipe table rows from the database layout.
+- settings.tsx (Engine Control Center):
+  * Contains toggles for Inference Mode (Hybrid, On-Device, Cloud), Scan Sensitivity Sliders (Low, Medium, High), and Data Usage Modes (WiFi Only, Low Data, Normal).
+  * Implements an Auto-Delete selector mapping values for 'Never', '7d', '30d', and '90d' alongside a Local-Only Mode security flag toggle.
+  * Provides full Notification Panel properties: 'Push Notifications', 'Notification Bar Results', 'Silent Mode (Vibration Only)', and 'Priority Alert' (flashes UI if confidence score maps above 85%).
+- api.tsx (Developer API Terminal):
+  * Completely grayed out and locked behind a visual subscription paywall overlay for all profiles except those holding an active "Enterprise Tier" assignment status token. When unlocked, it displays read-only system generation API integration keys, customizable Webhook endpoints registers, and raw JSON request curl command layout snippets.
+- profile.tsx (User Identity & Billing Vault):
+  * Renders profile metrics cards displaying real-time aggregated counters for 'Total Scans', 'AI Detected', 'Authentic', and 'Uncertain' criteria.
+  * Houses a dedicated monetization grid displaying five pricing cards: Free Tier ($0, 3 token limit, Gemini 2.5 Flash only), Basic Tier ($9/mo, 250 tokens, Pro access), Pro Tier ($29/mo, 1000 tokens, priority line prioritization), Advanced Tier ($59/mo, 3000 tokens, advanced parameters access), and Enterprise Tier ($149/mo, unlimited tokens, unlocks the protected API Developer Tab). Clicking a premium upgrade triggers a mock PayPal modal sandbox simulation loop that increments account credit balances upon success.
+
+2. BACKEND API ROUTER & AI ORCHESTRATION ENGINE (artifacts/api-server)
+- src/routes/scan.ts:
+  * Manages multipart router requests with Multer configured for raw RAM memory buffer streaming to completely bypass server-side local disk write-path permission constraints.
+  * Captures input metrics for source, userId, sensitivity, and the model selection parameters from the incoming multipart body request payload.
+  * Normalizes the complex structural array payloads returned from Gemini (categories and anomalies logs) into proper JavaScript array schemas, and serializes them into Supabase PostgreSQL tables using strict inline SQL parameterization formatting strings (e.g., sql`${JSON.stringify(data)}::jsonb`) to prevent structural type conversion faults from crashing database transactions.
+- src/lib/gemini-analyzer.ts:
+  * Converts the input memory buffers into raw base64 arrays and attaches them cleanly onto the modern unified Google Gen AI SDK constructor structures.
+  * Incorporates an automated "High-Availability Failover Circuit Breaker Block". Wrap the generateContent execution inside an intelligent try/catch check loop: if the selected model encounters a rate limit block or a 503 traffic throttling congestion message from Google's free-tier servers, the catch block must intercept the failure string, output an asynchronous server warning log, and automatically route the request payload down a legacy high-availability fallback node like 'gemini-1.5-flash' to protect core user application runtime operations.
+  * Cleans the output string payload. If the search grounding model returns text strings with trailing web reference citation footnotes (such as '[1]'), it scrubs them via regex patterns before passing the response body into the target JSON validation parser mapping blocks.
+
+Assemble this full system architecture with completely balanced layout containers, strict typing properties, and zero functional placeholders.

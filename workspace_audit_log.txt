@@ -1,0 +1,588 @@
+Scope: 8 of 9 workspace projects
+artifacts/mockup-sandbox typecheck$ tsc -p tsconfig.json --noEmit
+scripts typecheck$ tsc -p tsconfig.json --noEmit
+scripts typecheck: Done
+artifacts/mockup-sandbox typecheck: Done
+artifacts/api-server typecheck$ tsc -p tsconfig.json --noEmit
+artifacts/wizardry-ai typecheck$ tsc -p tsconfig.json --noEmit
+artifacts/api-server typecheck: src/lib/scanner.ts(190,10): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(190,19): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(192,13): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(192,22): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(193,21): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(193,30): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(193,55): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(194,20): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(195,10): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(196,12): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(196,66): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(196,72): error TS1434: Unexpected keyword or identifier.
+artifacts/api-server typecheck: src/lib/scanner.ts(196,75): error TS1434: Unexpected keyword or identifier.
+artifacts/api-server typecheck: src/lib/scanner.ts(196,81): error TS1434: Unexpected keyword or identifier.
+artifacts/api-server typecheck: src/lib/scanner.ts(196,83): error TS1434: Unexpected keyword or identifier.
+artifacts/api-server typecheck: src/lib/scanner.ts(196,87): error TS1434: Unexpected keyword or identifier.
+artifacts/api-server typecheck: src/lib/scanner.ts(196,91): error TS1434: Unexpected keyword or identifier.
+artifacts/api-server typecheck: src/lib/scanner.ts(196,112): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(196,115): error TS1434: Unexpected keyword or identifier.
+artifacts/api-server typecheck: src/lib/scanner.ts(196,134): error TS1003: Identifier expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(196,135): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(197,8): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(200,14): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(200,23): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(201,24): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(201,33): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(201,83): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(203,16): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(203,25): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(203,73): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(203,87): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(204,16): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(204,66): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(204,120): error TS1002: Unterminated string literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(205,12): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(206,10): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(207,7): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(209,14): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(209,23): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(210,24): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(210,33): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(210,74): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(211,17): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(211,26): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(211,52): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(211,78): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(212,10): error TS1110: Type expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(213,7): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(215,12): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(215,21): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(217,14): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(218,16): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(218,25): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(219,17): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(219,26): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(219,73): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(219,79): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(224,19): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(224,26): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(224,28): error TS1136: Property assignment expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(224,31): error TS1005: ':' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(227,27): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(227,36): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(227,48): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(228,24): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(228,33): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(229,24): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(229,33): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(229,63): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(229,74): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(230,24): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(230,69): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(230,79): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(231,20): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(232,18): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(233,24): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(233,43): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(233,55): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(233,72): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(233,91): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(233,120): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(234,22): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(234,31): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(235,24): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(235,33): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(235,59): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(236,25): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(236,34): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(236,70): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(237,24): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(237,59): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(238,18): error TS1110: Type expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(243,29): error TS1136: Property assignment expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(243,33): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(245,18): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(246,16): error TS1110: Type expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(247,13): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(247,15): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(248,20): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(248,29): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(249,22): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(249,31): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(250,26): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(250,29): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(250,40): error TS1434: Unexpected keyword or identifier.
+artifacts/api-server typecheck: src/lib/scanner.ts(250,93): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(251,18): error TS1110: Type expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(252,22): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(253,25): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(253,34): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(253,70): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(253,78): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(254,27): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(254,54): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(255,24): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(255,33): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(255,49): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(256,20): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(257,18): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(258,22): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(259,24): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(259,33): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(260,28): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(260,37): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(260,123): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(260,137): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(260,147): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(262,29): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(262,38): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(263,31): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(263,40): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(263,56): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(264,24): error TS1110: Type expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(265,21): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(266,20): error TS1110: Type expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(267,24): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(269,23): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(269,27): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(270,53): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(272,33): error TS1136: Property assignment expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(272,37): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(272,71): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(273,33): error TS1136: Property assignment expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(273,34): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(273,48): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(275,22): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(276,35): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(276,63): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(276,72): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(276,144): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(276,145): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(277,20): error TS1110: Type expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(278,18): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(279,16): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(280,13): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(280,14): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(283,20): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(283,29): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(284,22): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(284,31): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(285,26): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(285,35): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(285,121): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(285,135): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(285,145): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(287,27): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(287,36): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(288,29): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(288,38): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(288,54): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(289,22): error TS1110: Type expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(290,19): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(291,18): error TS1110: Type expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(294,49): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(296,29): error TS1136: Property assignment expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(296,33): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(297,29): error TS1136: Property assignment expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(297,30): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(297,44): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(299,18): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(300,33): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(301,22): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(301,31): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(302,28): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(302,37): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(302,49): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(302,59): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(302,72): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(302,81): error TS1434: Unexpected keyword or identifier.
+artifacts/api-server typecheck: src/lib/scanner.ts(302,86): error TS1434: Unexpected keyword or identifier.
+artifacts/api-server typecheck: src/lib/scanner.ts(303,20): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(304,17): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(304,18): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(305,16): error TS1110: Type expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(306,13): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(306,14): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(307,12): error TS1110: Type expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(309,16): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(310,18): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(310,27): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(311,22): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(311,31): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(311,125): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(313,24): error TS1005: ':' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(315,27): error TS1136: Property assignment expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(315,31): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(315,64): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(318,16): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(319,14): error TS1110: Type expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(321,18): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(322,22): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(322,31): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(322,106): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(322,119): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(323,20): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(324,28): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(329,23): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(329,26): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(329,31): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(330,32): error TS1136: Property assignment expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(330,35): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(331,23): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(331,33): error TS1136: Property assignment expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(331,34): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(331,43): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(333,25): error TS1003: Identifier expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(333,122): error TS1138: Parameter declaration expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(334,34): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(339,23): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(339,24): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(340,21): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(341,28): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(341,37): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(342,35): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(342,56): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(342,65): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(342,119): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(342,120): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(343,46): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(343,55): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(343,106): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(343,107): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(344,31): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(344,40): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(344,76): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(344,84): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(345,24): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(347,31): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(347,40): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(347,217): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(348,31): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(349,26): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(350,23): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(351,22): error TS1110: Type expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(352,19): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(353,17): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(353,18): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(353,19): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(354,16): error TS1110: Type expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(355,14): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(357,18): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(358,22): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(358,31): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(358,108): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(358,120): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(359,20): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(360,36): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(362,21): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(362,24): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(363,21): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(363,30): error TS1136: Property assignment expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(363,33): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(363,55): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(365,23): error TS1003: Identifier expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(365,102): error TS1138: Parameter declaration expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(366,35): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(371,21): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(371,22): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(372,19): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(374,20): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(375,17): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(375,18): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(375,19): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(376,16): error TS1110: Type expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(377,14): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(378,12): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(379,10): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(382,14): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(382,23): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(383,16): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(383,25): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(384,17): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(384,26): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(384,87): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(384,92): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(385,18): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(385,72): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(385,79): error TS1136: Property assignment expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(385,99): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(385,106): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(385,107): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(386,22): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(387,18): error TS1110: Type expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(388,29): error TS1005: ':' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(389,26): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(389,29): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(389,34): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(389,113): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(389,120): error TS1136: Property assignment expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(389,200): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(389,203): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(390,19): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(390,20): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(390,21): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(391,24): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(391,33): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(392,28): error TS1136: Property assignment expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(392,132): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(393,19): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(394,18): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(395,15): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(395,16): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(397,17): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(397,24): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(398,27): error TS1136: Property assignment expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(398,28): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(398,75): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(400,19): error TS1003: Identifier expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(400,139): error TS1138: Parameter declaration expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(401,19): error TS1003: Identifier expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(401,29): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(408,17): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(408,18): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(409,15): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(410,24): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(411,25): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(411,34): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(412,26): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(412,35): error TS1005: ':' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(412,118): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(413,27): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(413,36): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(413,60): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(414,20): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(415,17): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(415,19): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(416,25): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(416,34): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(416,84): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(416,93): error TS1005: ':' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(416,105): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(416,112): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(416,121): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(417,17): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(417,19): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(418,30): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(418,34): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(419,17): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(419,18): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(420,16): error TS1110: Type expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(421,14): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(424,20): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(424,29): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(425,23): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(425,32): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(425,48): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(426,24): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(426,26): error TS1434: Unexpected keyword or identifier.
+artifacts/api-server typecheck: src/lib/scanner.ts(426,31): error TS1434: Unexpected keyword or identifier.
+artifacts/api-server typecheck: src/lib/scanner.ts(426,34): error TS1434: Unexpected keyword or identifier.
+artifacts/api-server typecheck: src/lib/scanner.ts(426,40): error TS1434: Unexpected keyword or identifier.
+artifacts/api-server typecheck: src/lib/scanner.ts(426,42): error TS1434: Unexpected keyword or identifier.
+artifacts/api-server typecheck: src/lib/scanner.ts(426,46): error TS1434: Unexpected keyword or identifier.
+artifacts/api-server typecheck: src/lib/scanner.ts(426,49): error TS1434: Unexpected keyword or identifier.
+artifacts/api-server typecheck: src/lib/scanner.ts(427,16): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(428,13): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(430,18): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(430,27): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(431,26): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(431,36): error TS1110: Type expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(432,21): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(432,67): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(432,74): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(433,14): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(435,18): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(435,32): error TS1003: Identifier expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(435,112): error TS1138: Parameter declaration expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(436,22): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(441,13): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(441,14): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(441,15): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(442,24): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(442,29): error TS1127: Invalid character.
+artifacts/api-server typecheck: src/lib/scanner.ts(442,68): error TS1434: Unexpected keyword or identifier.
+artifacts/api-server typecheck: src/lib/scanner.ts(443,14): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(444,12): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(447,18): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(447,27): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(448,20): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(448,29): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(449,21): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(449,30): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(449,64): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(449,71): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(450,31): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(450,46): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(450,56): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(450,67): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(451,16): error TS1110: Type expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(452,20): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(453,22): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(453,31): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(454,24): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(454,33): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(454,106): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(455,24): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(455,104): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(455,120): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(455,123): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(456,18): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(457,22): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(458,24): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(458,33): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(458,102): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(459,24): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(459,93): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(459,105): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(460,18): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(461,16): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(463,22): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(463,31): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(464,26): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(464,35): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(464,65): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(465,28): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(465,41): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(466,18): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(467,15): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(468,37): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(468,46): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(468,102): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(468,112): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(472,24): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(472,33): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(472,111): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(472,119): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(473,24): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(474,28): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(475,29): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(475,32): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(475,37): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(475,137): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(476,22): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(477,20): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(478,18): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(479,15): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(483,24): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(483,33): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(483,110): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(483,119): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(484,24): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(485,28): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(486,28): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(486,31): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(486,36): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(486,178): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(486,185): error TS1136: Property assignment expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(486,219): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(487,38): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(487,47): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(487,73): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(488,24): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(489,21): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(489,22): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(490,20): error TS1110: Type expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(491,18): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(492,15): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(496,24): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(496,33): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(496,111): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(497,24): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(498,28): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(499,29): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(499,32): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(499,37): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(499,149): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(500,22): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(501,20): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(502,18): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(503,15): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(507,24): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(507,33): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(507,106): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(507,119): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(508,24): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(509,28): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(510,29): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(510,32): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(510,37): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(510,140): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(511,22): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(512,20): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(513,18): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(514,15): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(518,24): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(518,33): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(518,104): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(518,118): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(519,24): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(520,28): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(521,26): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(521,29): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(521,34): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(521,41): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(521,47): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(521,63): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(522,25): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(523,30): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(523,39): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(523,78): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(523,86): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(524,30): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(524,86): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(524,96): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(525,24): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(526,22): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(527,20): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(528,18): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(529,15): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(532,22): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(532,31): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(533,25): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(533,34): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(533,68): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(533,80): error TS1110: Type expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(534,25): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(534,72): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(534,88): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(535,18): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(536,15): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(538,20): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(538,29): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(539,30): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(539,42): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(539,51): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(539,93): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(540,27): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(540,35): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(540,44): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(540,59): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(540,73): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(541,16): error TS1110: Type expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(542,14): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(543,11): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(543,12): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(546,18): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(546,27): error TS1005: ')' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(547,28): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(547,37): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(547,87): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(549,20): error TS1005: '>' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(549,29): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(549,76): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(549,83): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(550,20): error TS1005: ';' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(550,78): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(551,16): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(552,14): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(553,11): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(554,10): error TS1110: Type expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(555,8): error TS1161: Unterminated regular expression literal.
+artifacts/api-server typecheck: src/lib/scanner.ts(558,26): error TS1005: ',' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(558,35): error TS1005: ':' expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(561,8): error TS1109: Expression expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(562,6): error TS1110: Type expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(563,3): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: src/lib/scanner.ts(564,1): error TS1128: Declaration or statement expected.
+artifacts/api-server typecheck: Failed
+C:\Users\PC\Downloads\wizardry-project\artifacts\api-server:
+[ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL] @workspace/api-server@0.0.0 typecheck: `tsc -p tsconfig.json --noEmit`
+Exit status 1
